@@ -1,5 +1,11 @@
 # Changelog — AI-Native Product Prioritization Maturity Model
 
+## v1.1.0 — 2026-07-28
+
+Added a **Verification** column to each dimension's table — an explicit, practical test of whether a transition (A→B, B→C, C→D, D→E) actually happened, not just claimed, matching the family's own precedent (SDLC's D4–D13, PDLC's D4–D12). 12 new clauses across D1–D3. Level E's own row is unchanged — its existing "Sustain: ..." text already serves this purpose.
+
+No change to any dimension's underlying maturity-state content — the existing "Indicative evidence" and "Transition to next level" columns are unchanged; this adds a missing verification layer only.
+
 ## v1.0.0 — 2026-07-28
 
 First locked baseline, repo created. Content transcribed verbatim from `AI_Native_Product_Prioritization_Maturity_Model_v1.0.xlsx` (retained in the `ai-native-sdlc-maturity-model` repo as historical working evidence), which itself received four content fixes on 2026-07-26, prior to this repo's creation:
