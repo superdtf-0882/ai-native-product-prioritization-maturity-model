@@ -1,5 +1,11 @@
 # Changelog — AI-Native Product Prioritization Maturity Model
 
+## v1.1.1 — 2026-07-28
+
+**Bug fix, found while building the Whole-Model View:** each dimension's table header declared six columns (Level, Dimension-specific state, Maturity definition, Indicative evidence, Transition to next level, Verification), but every data row only ever had five cells — "Dimension-specific state" and "Maturity definition" were never two distinct columns; the transcription from the workbook merged them into one cell under the wrong label, and the header was never corrected to match. Fixed by removing the phantom "Dimension-specific state" header — the remaining "Maturity definition" column is exactly the cell that was always there. No description text changed, no maturity content affected; this is a header-label correction only, caught by a hard column-count check while writing a parser against this file.
+
+Also landed `short_form.yml` — a 15-cell, one-sentence-per-level compression for the Whole-Model View, same discipline as the SDLC and PDLC compressions.
+
 ## v1.1.0 — 2026-07-28
 
 Added a **Verification** column to each dimension's table — an explicit, practical test of whether a transition (A→B, B→C, C→D, D→E) actually happened, not just claimed, matching the family's own precedent (SDLC's D4–D13, PDLC's D4–D12). 12 new clauses across D1–D3. Level E's own row is unchanged — its existing "Sustain: ..." text already serves this purpose.
