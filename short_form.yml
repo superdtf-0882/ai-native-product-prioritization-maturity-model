@@ -1,0 +1,50 @@
+# Short-form compression for the Whole-Model View (aimaturitymodels.com)
+#
+# One terse, one-sentence string per dimension/level, keyed "D<N>.<Level>".
+# 15 cells (3 dimensions x 5 levels), each 7-9 words (verified
+# programmatically, same discipline as the SDLC compression this one is
+# modeled on).
+#
+# Full definitions, transitions, and verification clauses live in
+# ai_native_product_prioritization_maturity_model.md -- this file is a
+# compression of that, not a replacement for it.
+#
+# PROVENANCE: this compression was authored against and verified directly
+# by reading ai_native_product_prioritization_maturity_model.md at commit
+# c26328b (tag v1.1.0, the commit that landed per-transition verification
+# clauses). Run `git diff v1.1.0 HEAD -- ai_native_product_prioritization_
+# maturity_model.md` from this repo's root -- an empty diff means this
+# compression is still current.
+
+version: "1.0.0"
+source_matrix_version: "1.1.0"
+source_matrix_commit: "c26328b70c852498add87dbb328a22114a375f15"
+generated: "2026-07-28"
+
+dimensions:
+  D1:
+    title: "Value Model Coherence"
+    levels:
+      A: "Priority argued by advocacy; AI drafts private business cases."
+      B: "AI summarizes proposals against a common, generic scoring method."
+      C: "AI maps proposals to defined criteria, flags scoring inconsistencies."
+      D: "AI runs sensitivity analysis; humans still govern weights, rankings."
+      E: "AI continuously refreshes the model; humans authorize each change."
+
+  D2:
+    title: "Decision Governance & Portfolio Integration"
+    levels:
+      A: "Local decisions by loudest voice; AI advocacy stays invisible."
+      B: "AI preps meetings, summaries; executives still override informally."
+      C: "AI assembles evidence, provenance; named humans decide, commit, record."
+      D: "AI models cross-portfolio displacement; humans govern final commitments."
+      E: "AI monitors, initiates reconsideration continuously; humans own choices."
+
+  D3:
+    title: "Outcome Calibration & Adaptation"
+    levels:
+      A: "Decisions rarely revisited; AI summaries lack a comparison baseline."
+      B: "AI synthesizes occasional retrospectives; lessons rarely reach the model."
+      C: "AI connects decisions to evidence, keeps inference visibly distinct."
+      D: "AI identifies systematic bias by criterion; anchors adjusted empirically."
+      E: "AI detects drift, bias continuously; failure routed to authority."
