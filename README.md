@@ -12,6 +12,11 @@ Three dimensions, each scored on the family-wide five-level ladder:
 
 See `ai_native_product_prioritization_maturity_model.md` for the full matrix — the source of truth.
 
+## Other files
+
+- `short_form.yml` — one-sentence-per-cell compression of all three dimensions, for consumption by external sites (e.g. aimaturitymodels.com's Whole-Model View). Not a source of truth, regenerate if it diverges.
+- `deep_dives/` — narrative-style Per-Dimension Deep-Dive content (one file per dimension), for aimaturitymodels.com's Deep-Dive pages, matching the SDLC and PDLC models' own precedent. Derived content, not independently versioned.
+
 ## Origin
 
 This model originated as David Facer's own working draft, developed alongside the SDLC and PDLC models in the same family, and held as a "Version 1.0 · Final draft" workbook pending the family-wide level vocabulary locking (resolved 2026-07-24). That vocabulary retrofit, plus a version-convention disambiguation note, six removed literal S0 references, and direct attribution of the 2015 Strategic Value Matrix, were landed directly in the workbook on 2026-07-26 — see `CHANGELOG.md`. This repo transcribes that finalized content to markdown at lock, with no further content changes.

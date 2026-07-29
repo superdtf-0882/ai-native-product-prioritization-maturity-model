@@ -1,5 +1,9 @@
 # Changelog — AI-Native Product Prioritization Maturity Model
 
+## v1.2.0 — 2026-07-28
+
+Added `deep_dives/` — narrative-style Per-Dimension Deep-Dive essays for all three dimensions (Value Model Coherence, Decision Governance & Portfolio Integration, Outcome Calibration & Adaptation), for aimaturitymodels.com's Deep-Dive pages, matching the SDLC and PDLC models' own precedent. Authored fresh, grounded in this matrix's own v1.1.1 locked content, including the per-transition verification clauses and the corrected column structure. No change to the matrix itself.
+
 ## v1.1.1 — 2026-07-28
 
 **Bug fix, found while building the Whole-Model View:** each dimension's table header declared six columns (Level, Dimension-specific state, Maturity definition, Indicative evidence, Transition to next level, Verification), but every data row only ever had five cells — "Dimension-specific state" and "Maturity definition" were never two distinct columns; the transcription from the workbook merged them into one cell under the wrong label, and the header was never corrected to match. Fixed by removing the phantom "Dimension-specific state" header — the remaining "Maturity definition" column is exactly the cell that was always there. No description text changed, no maturity content affected; this is a header-label correction only, caught by a hard column-count check while writing a parser against this file.
