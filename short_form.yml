@@ -11,14 +11,15 @@
 #
 # PROVENANCE: this compression was authored against and verified directly
 # by reading ai_native_product_prioritization_maturity_model.md at commit
-# c26328b (tag v1.1.0, the commit that landed per-transition verification
-# clauses). Run `git diff v1.1.0 HEAD -- ai_native_product_prioritization_
-# maturity_model.md` from this repo's root -- an empty diff means this
-# compression is still current.
+# 84a072f (tag v1.1.1, the commit that fixed a phantom table column found
+# while building this same Whole-Model View -- no maturity content
+# changed by that fix). Run `git diff v1.1.1 HEAD -- ai_native_product_
+# prioritization_maturity_model.md` from this repo's root -- an empty
+# diff means this compression is still current.
 
 version: "1.0.0"
-source_matrix_version: "1.1.0"
-source_matrix_commit: "c26328b70c852498add87dbb328a22114a375f15"
+source_matrix_version: "1.1.1"
+source_matrix_commit: "84a072f11dd00fb7b7effd1002680a39f0e56221"
 generated: "2026-07-28"
 
 dimensions:
