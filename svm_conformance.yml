@@ -1,0 +1,60 @@
+# Strategic Value Matrix -- conformance cases
+#
+# The cases any implementation of strategic_value_matrix.md must pass. They
+# test the RULES, not a portfolio: every id, merit and judgment below belongs
+# to this file, so no change to anyone's real ranking can move them.
+#
+# Derived copy. The canonical cases are maintained with the method's governing
+# standard; this copy carries their data unchanged, and its explanations are
+# written for a public reader.
+#
+# How to run a case: give each member its merit (its total before any lift)
+# and its two rule-5 judgments; record each edge as prerequisite -> dependent;
+# compute rule 3's lift to the fixed point with rule 4's higher-of, then order
+# by total, then direction (rule 8), then rule 5. The case passes when every
+# member of expect_order ends tied at ties_at and in that order -- and, where
+# r5_silent_required is true, rule 5 cannot tell them apart, so direction
+# alone decided. A case marked one_hop_control is run a second time with the
+# lift stopped after one step, and that run must FAIL: a case that cannot
+# fail confirms nothing.
+
+version: "1.0.0"
+frame_version: "1.10"
+
+cases:
+  - name: SYN-CHAIN
+    why: >
+      A chain of four, merit rising toward the head. An implementation that
+      lifts in a single pass, or one step at a time, settles on pairs and not
+      on chains. Rule 3 must lift every prerequisite to the head's score, and
+      rule 8 must order them prerequisite-first. Rule 5 alone would give the
+      exact reverse, because the size and risk judgments fall toward the
+      prerequisites.
+    members:
+      - { id: SYN-CHAIN-A, merit: 2,  size_inversion: 1, risk_inversion: 1 }
+      - { id: SYN-CHAIN-B, merit: 5,  size_inversion: 3, risk_inversion: 3 }
+      - { id: SYN-CHAIN-C, merit: 7,  size_inversion: 6, risk_inversion: 6 }
+      - { id: SYN-CHAIN-D, merit: 10, size_inversion: 9, risk_inversion: 9 }
+    edges:
+      - [SYN-CHAIN-A, SYN-CHAIN-B]
+      - [SYN-CHAIN-B, SYN-CHAIN-C]
+      - [SYN-CHAIN-C, SYN-CHAIN-D]
+    ties_at: 10
+    expect_order: [SYN-CHAIN-A, SYN-CHAIN-B, SYN-CHAIN-C, SYN-CHAIN-D]
+    r5_silent_required: false
+    one_hop_control: true
+    one_hop_would_give: "A 5, B 7, C 10, D 10 -- two members off the tie, so the case fails, which is what the control requires."
+
+  - name: SYN-PAIR
+    why: >
+      A pair tied on the inherited total with rule 5 silent, so rule 8's
+      direction alone decides. The ids are chosen so that ordering by name
+      would put the dependent first.
+    members:
+      - { id: SYN-PAIR-A, merit: 8, size_inversion: 6, risk_inversion: 6 }
+      - { id: SYN-PAIR-B, merit: 3, size_inversion: 6, risk_inversion: 6 }
+    edges:
+      - [SYN-PAIR-B, SYN-PAIR-A]
+    ties_at: 8
+    expect_order: [SYN-PAIR-B, SYN-PAIR-A]
+    r5_silent_required: true

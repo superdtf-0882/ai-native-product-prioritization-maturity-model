@@ -1,5 +1,15 @@
 # Changelog — AI-Native Product Prioritization Maturity Model
 
+## v1.3.0 — 2026-10-01
+
+Added the **Strategic Value Matrix** as this model's Level E reference pattern — the one the matrix already names, "The 2015 Strategic Value Matrix" — for aimaturitymodels.com's Strategic Value Matrix page, in the same shape as v1.2.0's `deep_dives/`:
+
+- `strategic_value_matrix.md` — the method's frame in public words: the geometric scale, the two composites, dependency lift, the tiebreak, and leaving the ranking at a declared reach. Frame version 1.10.
+- `svm_sample.yml` — seven illustrative criteria and eight fictional initiatives, labelled as examples. An adopter's criteria and weights are its own.
+- `svm_conformance.yml` — the cases any implementation must pass, including a chain that an implementation following dependencies only part of the way ranks wrongly.
+
+**No change to the matrix itself:** `ai_native_product_prioritization_maturity_model.md` is byte-identical to v1.2.0.
+
 ## v1.2.0 — 2026-07-28
 
 Added `deep_dives/` — narrative-style Per-Dimension Deep-Dive essays for all three dimensions (Value Model Coherence, Decision Governance & Portfolio Integration, Outcome Calibration & Adaptation), for aimaturitymodels.com's Deep-Dive pages, matching the SDLC and PDLC models' own precedent. Authored fresh, grounded in this matrix's own v1.1.1 locked content, including the per-transition verification clauses and the corrected column structure. No change to the matrix itself.

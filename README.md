@@ -16,6 +16,7 @@ See `ai_native_product_prioritization_maturity_model.md` for the full matrix —
 
 - `short_form.yml` — one-sentence-per-cell compression of all three dimensions, for consumption by external sites (e.g. aimaturitymodels.com's Whole-Model View). Not a source of truth, regenerate if it diverges.
 - `deep_dives/` — narrative-style Per-Dimension Deep-Dive content (one file per dimension), for aimaturitymodels.com's Deep-Dive pages, matching the SDLC and PDLC models' own precedent. Derived content, not independently versioned.
+- `strategic_value_matrix.md`, `svm_sample.yml`, `svm_conformance.yml` — the 2015 Strategic Value Matrix as this model's Level E reference pattern, for aimaturitymodels.com's Strategic Value Matrix page: the method's frame in public words, an illustrative sample of eight fictional initiatives, and the conformance cases any implementation must pass. Derived content, not independently versioned.
 
 ## Origin
 

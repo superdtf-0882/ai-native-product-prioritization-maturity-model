@@ -1,0 +1,45 @@
+# Strategic Value Matrix -- illustrative sample (aimaturitymodels.com)
+#
+# EXAMPLES ONLY. Seven illustrative criteria and eight FICTIONAL initiatives,
+# so the method in strategic_value_matrix.md can be seen working. Rule 2: an
+# adopter's criteria and weights must be its own -- these are not a
+# recommended set, and no real organization's portfolio appears here.
+#
+# Derived content, not independently versioned. Carried verbatim from the
+# Strategic Value Matrix demonstrator of 2026-09-12. The demonstrator recorded
+# each dependency as "this item blocks that one"; here it is an edge,
+# prerequisite -> dependent.
+#
+# Scores are on the geometric scale (rule 1). The ease criteria are inverted:
+# higher is smaller, less indebted, safer. Weights sum to 1.00 (rule 2):
+# value 0.70, ease 0.30.
+
+version: "1.0.0"
+frame_version: "1.10"
+scale: [1, 3, 9, 27]
+
+criteria:
+  - { key: fit,   name: "Strategic fit",   half: value, weight: 0.30 }
+  - { key: rev,   name: "Revenue",         half: value, weight: 0.15 }
+  - { key: reach, name: "Reach",           half: value, weight: 0.15 }
+  - { key: diff,  name: "Differentiation", half: value, weight: 0.10 }
+  - { key: size,  name: "Size ⁻¹",         half: ease,  weight: 0.10 }
+  - { key: debt,  name: "Debt paid",       half: ease,  weight: 0.12 }
+  - { key: risk,  name: "Risk ⁻¹",         half: ease,  weight: 0.08 }
+
+# Rule 5's tiebreak sums these two, unweighted.
+r5_terms: [size, risk]
+
+initiatives:
+  - { id: sso,  name: "Single sign-on rollout",     scores: { fit: 27, rev: 9,  reach: 27, diff: 3,  size: 3,  debt: 3,  risk: 3 } }
+  - { id: idm,  name: "Identity service migration", scores: { fit: 3,  rev: 1,  reach: 1,  diff: 1,  size: 1,  debt: 27, risk: 3 } }
+  - { id: pipe, name: "Usage analytics pipeline",   scores: { fit: 9,  rev: 1,  reach: 3,  diff: 3,  size: 3,  debt: 9,  risk: 3 } }
+  - { id: dash, name: "Customer usage dashboard",   scores: { fit: 9,  rev: 9,  reach: 9,  diff: 27, size: 9,  debt: 1,  risk: 9 } }
+  - { id: onb,  name: "Mobile onboarding redesign", scores: { fit: 9,  rev: 27, reach: 9,  diff: 3,  size: 3,  debt: 3,  risk: 9 } }
+  - { id: bill, name: "Billing export v2",          scores: { fit: 3,  rev: 3,  reach: 3,  diff: 1,  size: 9,  debt: 9,  risk: 9 } }
+  - { id: srch, name: "Search relevance tuning",    scores: { fit: 3,  rev: 3,  reach: 9,  diff: 9,  size: 9,  debt: 1,  risk: 9 } }
+  - { id: rpt,  name: "Legacy report retirement",   scores: { fit: 1,  rev: 1,  reach: 1,  diff: 1,  size: 27, debt: 27, risk: 27 } }
+
+edges:
+  - { prerequisite: idm,  dependent: sso }
+  - { prerequisite: pipe, dependent: dash }
