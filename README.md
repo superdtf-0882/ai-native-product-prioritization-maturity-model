@@ -1,12 +1,12 @@
-# AI-Native Product Prioritization Maturity Model
+# AI-Native Portfolio Prioritization Maturity Model
 
-A maturity model appraising an organization's product prioritization capability — not the elegance of a single scorecard or roadmap decision. Part of the same family as the [AI-Native SDLC Maturity Model](https://github.com/superdtf-0882/ai-native-sdlc-maturity-model) and the [AI-Native PDLC Maturity Model](https://github.com/superdtf-0882/ai-native-pdlc-maturity-model), sharing the same five-level maturity vocabulary — Nascent / Modeled / Continuous / Integral / Telemetric — but with its own three dimensions, independent of either model's own D1–D3.
+A maturity model appraising an organization's portfolio prioritization capability — not the elegance of a single scorecard or roadmap decision. Part of the same family as the [AI-Native SDLC Maturity Model](https://github.com/superdtf-0882/ai-native-sdlc-maturity-model) and the [AI-Native PDLC Maturity Model](https://github.com/superdtf-0882/ai-native-pdlc-maturity-model), sharing the same five-level maturity vocabulary — Nascent / Modeled / Continuous / Integral / Telemetric — but with its own three dimensions, independent of either model's own D1–D3.
 
 ## What this is
 
 Three dimensions, each scored on the family-wide five-level ladder:
 
-- **D1 — Value Model Coherence.** Is product value explicit, multi-dimensional, defensible, and usable by governed human and AI participants?
+- **D1 — Value Model Coherence.** Is portfolio value explicit, multi-dimensional, defensible, and usable by governed human and AI participants?
 - **D2 — Decision Governance & Portfolio Integration.** Do those value judgments govern real funding, capacity, sequencing, and trade-offs, with explicit human and AI authority?
 - **D3 — Outcome Calibration & Adaptation.** Does realized evidence improve forecasts, the value model, portfolio decisions, and — when warranted — the originating intent?
 

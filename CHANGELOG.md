@@ -1,4 +1,17 @@
-# Changelog — AI-Native Product Prioritization Maturity Model
+# Changelog — AI-Native Portfolio Prioritization Maturity Model
+
+## v1.4.0 — 2026-10-07
+
+**Renamed: the AI-Native Portfolio Prioritization Maturity Model**, formerly the AI-Native Product Prioritization Maturity Model. The model always graded prioritization across the whole portfolio, product and internal work alike, scored on one value model as fungible assets; the name now says so, which is truer to its roots.
+
+- The title and the first paragraph.
+- The four cells that used the old name: D1's core question ("Is portfolio value explicit…"), D1's definition ("an explicit model of portfolio value"), D1-C ("a shared portfolio-value model") and D3-E ("Portfolio prioritization operates as a continuous learning loop"). One word each; no level's ladder changed.
+- A new section, **Roots**, before *The 2015 Strategic Value Matrix*: the method's 2010 origin, in the author's words. The 2015 section is unchanged.
+- `README.md` and `strategic_value_matrix.md` use the new name. Earlier entries below keep the name they were written under.
+
+Scores against v1.3.0 remain comparable: no level's substance changed; D1 and D3 now name the portfolio, product and internal work alike, which the model always meant.
+
+The repository and the matrix file keep their names (`ai-native-product-prioritization-maturity-model`, `ai_native_product_prioritization_maturity_model.md`): sites load the model by them, so they are identifiers, and identifiers stay while titles change.
 
 ## v1.3.0 — 2026-10-01
 

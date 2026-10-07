@@ -2,7 +2,7 @@
 
 Frame version: 1.10
 
-*Authored by David Facer in 2015, and the reference pattern for Level E Value Model Coherence in the [AI-Native Product Prioritization Maturity Model](ai_native_product_prioritization_maturity_model.md). Derived content, not independently versioned.*
+*Authored by David Facer in 2015, and the reference pattern for Level E Value Model Coherence in the [AI-Native Portfolio Prioritization Maturity Model](ai_native_product_prioritization_maturity_model.md). Derived content, not independently versioned.*
 
 ## What it is
 
