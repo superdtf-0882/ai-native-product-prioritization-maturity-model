@@ -1,5 +1,9 @@
 # Changelog — AI-Native Portfolio Prioritization Maturity Model
 
+## v1.4.1 — 2026-10-08
+
+**Two lines, and nothing else.** The level names line said the names are identical across "(SDLC, PDLC, and Prioritization)": it now names all four models, Enterprise Architecture included, by their current names. And the matrix's own version line still read 1.2.0 after v1.4.0 changed the matrix: it now names this release. No level, transition or verification changed; scores against v1.4.0 are unaffected. Found by an outside reading of aimaturitymodels.com's full digest (OKF-TOGAF#169).
+
 ## v1.4.0 — 2026-10-07
 
 **Renamed: the AI-Native Portfolio Prioritization Maturity Model**, formerly the AI-Native Product Prioritization Maturity Model. The model always graded prioritization across the whole portfolio, product and internal work alike, scored on one value model as fungible assets; the name now says so, which is truer to its roots.

@@ -1,6 +1,6 @@
 # AI-Native Portfolio Prioritization Maturity Model — Matrix
 
-**Version 1.2.0 — 2026-07-28** (Per-Dimension Deep-Dive essays added in `deep_dives/` for all three dimensions — narrative content, no change to this matrix. v1.1.1 fixed a header-label bug — each table declared a phantom "Dimension-specific state" column that never had distinct data; removed, no content affected. v1.1.0 added per-transition verification clauses for D1–D3, matching the family's own precedent — SDLC's D4–D13 and PDLC's D4–D12 each carry an explicit test of whether the destination state was actually reached, not just claimed. See `CHANGELOG.md`. Locked baseline remains v1.0.0 — 2026-07-28, unchanged below.)
+**Version 1.4.1 — 2026-10-08** (the level names line now names all four models in the family by their current names, and this version line names the release. v1.4.0 renamed this model the AI-Native Portfolio Prioritization Maturity Model and added Roots; v1.3.0 added the Strategic Value Matrix beside this matrix, which it left unchanged. No level, transition or verification changed in v1.4.1; scores against v1.4.0 are unaffected) Previously: **Version 1.2.0 — 2026-07-28** (Per-Dimension Deep-Dive essays added in `deep_dives/` for all three dimensions — narrative content, no change to this matrix. v1.1.1 fixed a header-label bug — each table declared a phantom "Dimension-specific state" column that never had distinct data; removed, no content affected. v1.1.0 added per-transition verification clauses for D1–D3, matching the family's own precedent — SDLC's D4–D13 and PDLC's D4–D12 each carry an explicit test of whether the destination state was actually reached, not just claimed. See `CHANGELOG.md`. Locked baseline remains v1.0.0 — 2026-07-28, unchanged below.)
 
 This model appraises an organization's portfolio prioritization capability — its ability to see the whole of its discretionary work, product and internal alike, as one portfolio of fungible assets, and to allocate capital, capacity and attention across it on an explicit value model. It is not an appraisal of any single scorecard or roadmap decision. It has three dimensions, each independently scored on the same family-wide five-level ladder (A–E) as every other model in this family, but each dimension's own state descriptions, evidence, and transitions are specific to prioritization — they are not shared with or inherited from the SDLC or PDLC models, whose own D1–D3 cover market/persona/positioning intelligence, a genuinely different capability.
 
@@ -24,7 +24,7 @@ AI use does not increase maturity by itself. It increases maturity only when it 
 
 ### Maturity-level names
 
-The five letters A–E carry a family-wide name, identical across every dimension and every model in this family (SDLC, PDLC, and Prioritization):
+The five letters A–E carry a family-wide name, identical across every dimension and every model in this family (SDLC, PDLC, Portfolio Prioritization, and Enterprise Architecture):
 
 | Letter | Name |
 |---|---|
