@@ -2,6 +2,8 @@
 
 A maturity model appraising an organization's portfolio prioritization capability — not the elegance of a single scorecard or roadmap decision. Part of the same family as the [AI-Native SDLC Maturity Model](https://github.com/superdtf-0882/ai-native-sdlc-maturity-model) and the [AI-Native PDLC Maturity Model](https://github.com/superdtf-0882/ai-native-pdlc-maturity-model), sharing the same five-level maturity vocabulary — Nascent / Modeled / Continuous / Integral / Telemetric — but with its own three dimensions, independent of either model's own D1–D3.
 
+**Versions.** The repository's release tag versions the repository; the model's own version line names the release that last changed its text. A release that changes only other files leaves the version line as it was.
+
 ## What this is
 
 Three dimensions, each scored on the family-wide five-level ladder:
