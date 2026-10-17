@@ -17,9 +17,10 @@
 # prioritization_maturity_model.md` from this repo's root -- an empty
 # diff means this compression is still current.
 
+# RE-VERIFIED 2026-10-17 against 9087344 (the text commit of v1.4.2): read by the family parser, the dimensions' fields are the same as at v1.1.1 but for v1.4.0's rename, "product" to "portfolio" in D1's definition, D1 at C and D3 at E, words no cell carries; the 15 cells unchanged.
 version: "1.0.0"
-source_matrix_version: "1.1.1"
-source_matrix_commit: "84a072f11dd00fb7b7effd1002680a39f0e56221"
+source_matrix_version: "1.4.2"
+source_matrix_commit: "9087344b4484481ce10398bbf355b91ad0f7c2c6"
 generated: "2026-07-28"
 
 dimensions:
