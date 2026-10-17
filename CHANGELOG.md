@@ -1,5 +1,16 @@
 # Changelog — AI-Native Portfolio Prioritization Maturity Model
 
+## v1.4.2 — 2026-10-17
+
+A wording release under the model family's parts standard (STD-MODEL-PARTS v1.1). No level, transition, verification or evidence changed, and no score against v1.4.1 is affected.
+
+- The level-names section is the five names and a pointer to the family's one home for them, `family_maturity_levels.md` in the SDLC repository at v1.4.2. Its table and its list of the family's models go.
+- The model no longer describes the family's other models: the opening paragraph uses the family's five-level ladder and drops what the SDLC and PDLC models' D1–D3 cover; the version line is rewritten for this release, its history kept here.
+- The source workbook is named at its place and tag, the SDLC repository at v1.4.2.
+- The reading rules say the model scores A to E only, with no Pre-AI or Exempt.
+- The README links the family's models page in place of the other models and states the version rule.
+- `tools/release-check.js` and `tools/model-parser.js` are the practice's template's current copies, the parser reading this model's tables; `short_form.yml` cites this release's text commit.
+
 ## v1.4.1 — 2026-10-08
 
 **Two lines, and nothing else.** The level names line said the names are identical across "(SDLC, PDLC, and Prioritization)": it now names all four models, Enterprise Architecture included, by their current names. And the matrix's own version line still read 1.2.0 after v1.4.0 changed the matrix: it now names this release. No level, transition or verification changed; scores against v1.4.0 are unaffected. Found by an outside reading of aimaturitymodels.com's full digest (OKF-TOGAF#169).

@@ -1,8 +1,8 @@
 # AI-Native Portfolio Prioritization Maturity Model
 
-A maturity model appraising an organization's portfolio prioritization capability — not the elegance of a single scorecard or roadmap decision. Part of the same family as the [AI-Native SDLC Maturity Model](https://github.com/superdtf-0882/ai-native-sdlc-maturity-model) and the [AI-Native PDLC Maturity Model](https://github.com/superdtf-0882/ai-native-pdlc-maturity-model), sharing the same five-level maturity vocabulary — Nascent / Modeled / Continuous / Integral / Telemetric — but with its own three dimensions, independent of either model's own D1–D3.
+A maturity model appraising an organization's portfolio prioritization capability — not the elegance of a single scorecard or roadmap decision. It is one of the AI-native maturity models, sharing the family's five-level ladder — Nascent / Modeled / Continuous / Integral / Telemetric — with its own three dimensions. For the family, see aimaturitymodels.com/models.
 
-**Versions.** The repository's release tag versions the repository; the model's own version line names the release that last changed its text. A release that changes only other files leaves the version line as it was.
+**Versions.** The release tag versions the repository, and the model's version line names the tag it is at, every release (STD-MODEL-PARTS v1.1 §4C). `CHANGELOG.md` says what each release changed.
 
 ## What this is
 
@@ -17,7 +17,7 @@ See `ai_native_product_prioritization_maturity_model.md` for the full matrix —
 ## Other files
 
 - `short_form.yml` — one-sentence-per-cell compression of all three dimensions, for consumption by external sites (e.g. aimaturitymodels.com's Whole-Model View). Not a source of truth, regenerate if it diverges.
-- `deep_dives/` — narrative-style Per-Dimension Deep-Dive content (one file per dimension), for aimaturitymodels.com's Deep-Dive pages, matching the SDLC and PDLC models' own precedent. Derived content, not independently versioned.
+- `deep_dives/` — narrative-style Per-Dimension Deep-Dive content (one file per dimension), for aimaturitymodels.com's Deep-Dive pages. Derived content, not independently versioned.
 - `strategic_value_matrix.md`, `svm_sample.yml`, `svm_conformance.yml` — the 2015 Strategic Value Matrix as this model's Level E reference pattern, for aimaturitymodels.com's Strategic Value Matrix page: the method's frame in public words, an illustrative sample of eight fictional initiatives, and the conformance cases any implementation must pass. Derived content, not independently versioned.
 
 ## Origin

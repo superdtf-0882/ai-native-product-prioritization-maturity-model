@@ -1,10 +1,10 @@
 # AI-Native Portfolio Prioritization Maturity Model — Matrix
 
-**Version 1.4.1 — 2026-10-08** (the level names line now names all four models in the family by their current names, and this version line names the release. v1.4.0 renamed this model the AI-Native Portfolio Prioritization Maturity Model and added Roots; v1.3.0 added the Strategic Value Matrix beside this matrix, which it left unchanged. No level, transition or verification changed in v1.4.1; scores against v1.4.0 are unaffected) Previously: **Version 1.2.0 — 2026-07-28** (Per-Dimension Deep-Dive essays added in `deep_dives/` for all three dimensions — narrative content, no change to this matrix. v1.1.1 fixed a header-label bug — each table declared a phantom "Dimension-specific state" column that never had distinct data; removed, no content affected. v1.1.0 added per-transition verification clauses for D1–D3, matching the family's own precedent — SDLC's D4–D13 and PDLC's D4–D12 each carry an explicit test of whether the destination state was actually reached, not just claimed. See `CHANGELOG.md`. Locked baseline remains v1.0.0 — 2026-07-28, unchanged below.)
+**Version 1.4.2 — 2026-10-17** (a wording release under the model family's parts standard: the level names point to the family's one file of them, the model no longer describes the family's other models, and it says it scores A to E only. No level, transition or verification changed; scores against v1.4.1 are unaffected. See `CHANGELOG.md`.)
 
-This model appraises an organization's portfolio prioritization capability — its ability to see the whole of its discretionary work, product and internal alike, as one portfolio of fungible assets, and to allocate capital, capacity and attention across it on an explicit value model. It is not an appraisal of any single scorecard or roadmap decision. It has three dimensions, each independently scored on the same family-wide five-level ladder (A–E) as every other model in this family, but each dimension's own state descriptions, evidence, and transitions are specific to prioritization — they are not shared with or inherited from the SDLC or PDLC models, whose own D1–D3 cover market/persona/positioning intelligence, a genuinely different capability.
+This model appraises an organization's portfolio prioritization capability — its ability to see the whole of its discretionary work, product and internal alike, as one portfolio of fungible assets, and to allocate capital, capacity and attention across it on an explicit value model. It is not an appraisal of any single scorecard or roadmap decision. It has three dimensions, each independently scored on the family's five-level ladder (A–E), but each dimension's own state descriptions, evidence, and transitions are specific to prioritization.
 
-**This markdown document is the source of truth.** `AI_Native_Product_Prioritization_Maturity_Model_v1.0.xlsx`, retained in the SDLC repo, is the historical working draft this document was transcribed from — not a distribution rendering of it.
+**This markdown document is the source of truth.** `AI_Native_Product_Prioritization_Maturity_Model_v1.0.xlsx`, in github.com/superdtf-0882/ai-native-sdlc-maturity-model at v1.4.2, is the historical working draft this document was transcribed from — not a distribution rendering of it.
 
 ## Purpose
 
@@ -22,17 +22,11 @@ AI use does not increase maturity by itself. It increases maturity only when it 
 | D2 | Decision Governance & Portfolio Integration | Do those value judgments govern real funding, capacity, sequencing, and trade-offs, with explicit human and AI authority? |
 | D3 | Outcome Calibration & Adaptation | Does realized evidence improve forecasts, the value model, portfolio decisions, and — when warranted — the originating intent? |
 
-### Maturity-level names
+## Family maturity names
 
-The five letters A–E carry a family-wide name, identical across every dimension and every model in this family (SDLC, PDLC, Portfolio Prioritization, and Enterprise Architecture):
+A — Nascent · B — Modeled · C — Continuous · D — Integral · E — Telemetric
 
-| Letter | Name |
-|---|---|
-| A | **Nascent** |
-| B | **Modeled** |
-| C | **Continuous** |
-| D | **Integral** |
-| E | **Telemetric** |
+Names, descriptions and the general shape: family_maturity_levels.md in github.com/superdtf-0882/ai-native-sdlc-maturity-model at v1.4.2.
 
 ## The governing loop
 
