@@ -228,7 +228,11 @@ function parseModel(input) {
     // review bullet into the Flags section in a text-neutral release, and is compared as a flag.
     if (!out.readingRules && /^(How to read\b|Family consistency and review boundaries$)/.test(h.text)) {
       const start = h.i + 1;
-      const body = section(lines, hs, h);
+      // A dimension nested under the reading rules (Prioritization's ### D1., PDLC's #### D4.) ends
+      // them: the rules are the text before the first dimension heading, at any level (435-CC).
+      const whole = section(lines, hs, h);
+      const firstDim = hs.find((x) => x.i > h.i && x.i < start + whole.length && (DIM_ONE.test(x.text) || DIM_RANGE.test(x.text)));
+      const body = firstDim ? whole.slice(0, firstDim.i - start) : whole;
       const skip = new Set();
       const fh = hs.find((x) => x.i > h.i && x.i < start + body.length && /^Flags$/.test(x.text));
       if (fh) { const n = section(lines, hs, fh).length; for (let k = fh.i; k <= fh.i + n; k++) skip.add(k); }

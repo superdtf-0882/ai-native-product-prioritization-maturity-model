@@ -1,5 +1,9 @@
 # Changelog — AI-Native Portfolio Prioritization Maturity Model
 
+## v1.4.3 — 2026-10-17
+
+**Layout only: text-neutral under STD-MODEL-PARTS v1.1.** Each dimension's table is written in the model family's common form (§5.1, §5.2): the dimension under its own second-level heading, each level under `### A — Nascent`, its evidence as `**Indicative evidence:**`, its step onward as `**Transition from A to B**` with its `**Verification:**` line, and the sustainment at E as `**Sustainment:**`. Every cell is kept word for word; row E's verification cell, a dash, has no text to keep. The reading rules take the common title, *How to read this model*. The model's other tables, the dimensions' list and the governing loop's failure classes, stay as tables. No word of any level, transition, verification, evidence, sustainment, definition or reading rule changed, as the release check's text-neutral test shows against v1.4.2; scores against v1.4.2 are unaffected. Work Item OKF-TOGAF#205.
+
 ## v1.4.2 — 2026-10-17
 
 A wording release under the model family's parts standard (STD-MODEL-PARTS v1.1). No level, transition, verification or evidence changed, and no score against v1.4.1 is affected.
