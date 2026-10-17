@@ -59,6 +59,8 @@ Dimensions are independently scored — an organization can be advanced in one d
 
 Each level is followed by its transition, indicative evidence, and a verification clause — a practical test of whether the destination state was actually reached, not just claimed. Level E is followed by a sustainment note instead of a further transition, since there is no Level F.
 
+**Pre-AI and Exempt:** none; this model scores A to E only.
+
 ---
 
 ### D1. Value Model Coherence
