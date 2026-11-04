@@ -42,6 +42,9 @@ const DEFINITION_LINE = /^\*\*Definition:\*\*\s*([\s\S]*)$/;
 const HEADING = /^(#{1,6}) (.*)$/;
 const DIM_ONE = /^D(\d+)\. (.*)$/;
 const DIM_RANGE = /^D(\d+)[–-]D(\d+)\. (.*)$/;
+// A boundary heading in EA's unheaded form: "D1 / D2", two or more dimensions and nothing
+// else. Deliberately not DIM_ONE's shape -- that one requires the period and a title.
+const UNHEADED_BOUNDARY = /^D\d+(?:\s*\/\s*D\d+)+$/;
 const MATRIX_VERSION = /^\*\*Version (\d+\.\d+\.\d+) — (\d{4}-\d{2}-\d{2})/;
 const OWN_VERSION = /^\*\*(STD-[A-Z0-9-]+) · v(\d+(?:\.\d+)*) · (\d{4}-\d{2}-\d{2})\*\*/;
 const NAMES_LINE = /^A — \S+ · B — \S+ · C — \S+ · D — \S+ · E — \S+$/;
@@ -247,6 +250,38 @@ function parseModel(input) {
     const asText = () => paragraphs(section(lines, hs, h)).filter((p) => !/^-{3,}$/.test(p)).join("\n\n");
     if (!out.boundaries && h.level === 2 && /^Cross-dimension boundar/i.test(h.text)) out.boundaries = { heading: h.text, text: asText() };
     if (!out.provenance && h.level === 2 && /^(Dimension provenance|Family position|Provenance)\b/i.test(h.text)) out.provenance = { heading: h.text, text: asText() };
+  }
+  // Boundaries with no heading of their own (437-CC §4.1; 224-DT2 §1.1). EA opens its
+  // boundaries under "### D1 / D2" and three more like it, after D10's closing rule, with no
+  // section heading above them -- so the loop above read them as NOTHING: not into boundaries,
+  // and not into D10 either, because dimensionBlock() already stops at that rule. Heading them
+  // in the layout release would have made the field APPEAR, and the text-neutral test would
+  // have seen a field arrive where no word moved. The parser learns the present form first, so
+  // both sides of that comparison read the same text.
+  //
+  // NARROW, which is the condition the ruling carries: only level-3 headings of the form
+  // "Dn / Dm", only after the LAST dimension's closing rule, and only when no "## Cross-dimension
+  // boundaries" heading was found. A "Dn / Dm" heading before that rule is inside a dimension;
+  // a section after it that is not "Dn / Dm" is somebody else's section. SDLC, the shared layer,
+  // Product Marketing and Prioritization reach none of this: they either carry the "##" heading
+  // or have nothing of this shape after their last rule.
+  if (!out.boundaries) {
+    const dimHs = hs.filter((h) => h.level >= 2 && h.level <= 4 && (DIM_ONE.test(h.text) || DIM_RANGE.test(h.text)));
+    const last = dimHs[dimHs.length - 1];
+    if (last) {
+      const after = section(lines, hs, last);
+      const r = after.findIndex((l) => /^-{3,}\s*$/.test(l));
+      if (r >= 0) {
+        const ruleAt = last.i + 1 + r;
+        const start = hs.find((h) => h.i > ruleAt && (h.level <= 2 || UNHEADED_BOUNDARY.test(h.text)));
+        if (start && start.level === 3 && UNHEADED_BOUNDARY.test(start.text)) {
+          const end = hs.find((h) => h.i > start.i && h.level <= 2);
+          const body = lines.slice(start.i, end ? end.i : lines.length);
+          const text = paragraphs(body).filter((p) => !/^-{3,}$/.test(p)).join("\n\n");
+          if (text) out.boundaries = { heading: null, text };
+        }
+      }
+    }
   }
   for (const p of paragraphs(lines)) {
     let m;
